@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cont">
+    <div class="cardCont">
+      <div class="inputCont">
+        <div>
+          <h5>Day</h5>
+          <input type="number" min="1" placeholder="Day" name="day" id="day" class="input">
+        </div>
+        <div>
+          <h5>Month</h5>
+          <input type="number" min="1" placeholder="Month" name="month" id="month" class="input">
+        </div>
+        <div>
+          <h5>Year</h5>
+          <input type="number" min="1" placeholder="Year" name="year" id="year" class="input">
+        </div>
+      </div>
+
+      <div class="btnCont">
+        <div class="line"></div>
+        <button class="btn" id="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
+      </div>
+
+      <div class="letterCont">
+        <h1 class="letter">
+          <p class="coloured" id="yearOut">0</p>
+          Years
+        </h1>
+        <h1 class="letter">
+          <p class="coloured" id="dayOut">0</p>
+          Days
+        </h1>
+        <h1 class="letter">
+          <p class="coloured" id="monthOut">0</p>
+          Months
+        </h1>
+      </div>
+    </div>
+  </div>
+</body>
+  <script src="app.js"></script>
+</html>
